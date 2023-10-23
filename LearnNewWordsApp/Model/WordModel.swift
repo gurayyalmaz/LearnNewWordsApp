@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Word {
-    let inForeignLanguage: String
-    let meaning: String
-    let id: UUID
+struct WordModel {
+    var inForeignLanguage: String
+    var meaning: String
+    var id: UUID
 }

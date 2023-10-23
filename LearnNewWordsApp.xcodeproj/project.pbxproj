@@ -18,6 +18,8 @@
 		EDA43F112AE6937D00AF875F /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA43F102AE6937D00AF875F /* CoreDataService.swift */; };
 		EDA43F1C2AE696D700AF875F /* Words+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA43F1A2AE696D700AF875F /* Words+CoreDataClass.swift */; };
 		EDA43F1D2AE696D700AF875F /* Words+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA43F1B2AE696D700AF875F /* Words+CoreDataProperties.swift */; };
+		EDA43F1F2AE6C63300AF875F /* AddAWordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA43F1E2AE6C63300AF875F /* AddAWordVC.swift */; };
+		EDA43F212AE6EE5500AF875F /* WordModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA43F202AE6EE5500AF875F /* WordModelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		EDA43F102AE6937D00AF875F /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		EDA43F1A2AE696D700AF875F /* Words+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Words+CoreDataClass.swift"; sourceTree = "<group>"; };
 		EDA43F1B2AE696D700AF875F /* Words+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Words+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EDA43F1E2AE6C63300AF875F /* AddAWordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAWordVC.swift; sourceTree = "<group>"; };
+		EDA43F202AE6EE5500AF875F /* WordModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 				EDA43EF32AE5EE0D00AF875F /* AppDelegate.swift */,
 				EDA43EF52AE5EE0D00AF875F /* SceneDelegate.swift */,
 				EDA43EF72AE5EE0D00AF875F /* MainVC.swift */,
+				EDA43F1E2AE6C63300AF875F /* AddAWordVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -92,6 +97,7 @@
 		EDA43F0B2AE5EF1E00AF875F /* ModelView */ = {
 			isa = PBXGroup;
 			children = (
+				EDA43F202AE6EE5500AF875F /* WordModelView.swift */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -188,10 +194,12 @@
 				EDA43EF82AE5EE0D00AF875F /* MainVC.swift in Sources */,
 				EDA43F1C2AE696D700AF875F /* Words+CoreDataClass.swift in Sources */,
 				EDA43EFE2AE5EE0D00AF875F /* LearnNewWordsApp.xcdatamodeld in Sources */,
+				EDA43F1F2AE6C63300AF875F /* AddAWordVC.swift in Sources */,
 				EDA43F1D2AE696D700AF875F /* Words+CoreDataProperties.swift in Sources */,
 				EDA43EF42AE5EE0D00AF875F /* AppDelegate.swift in Sources */,
 				EDA43EF62AE5EE0D00AF875F /* SceneDelegate.swift in Sources */,
 				EDA43F112AE6937D00AF875F /* CoreDataService.swift in Sources */,
+				EDA43F212AE6EE5500AF875F /* WordModelView.swift in Sources */,
 				EDA43F0F2AE5F6C600AF875F /* WordModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

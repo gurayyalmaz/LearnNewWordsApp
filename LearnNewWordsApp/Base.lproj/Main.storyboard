@@ -162,6 +162,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ECW-eY-zUE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="88V-iB-tNM">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -199,11 +200,45 @@
                     <navigationItem key="navigationItem" id="TNY-go-S7e"/>
                     <connections>
                         <outlet property="savedWordsListTV" destination="ElN-ip-XOE" id="SmN-Ur-cYg"/>
+                        <segue destination="RNU-qY-95L" kind="show" identifier="toMeaningVC" id="j8F-wD-56O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qAK-Nc-30H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1918" y="1277"/>
+        </scene>
+        <!--MeaningVC-->
+        <scene sceneID="nvf-WU-7DM">
+            <objects>
+                <viewController id="RNU-qY-95L" customClass="MeaningVC" customModule="LearnNewWordsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o5h-EW-dY4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Meaning Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLj-vO-2Mi">
+                                <rect key="frame" x="30" y="376" width="332" height="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5JE-Qx-gDD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NLj-vO-2Mi" firstAttribute="leading" secondItem="5JE-Qx-gDD" secondAttribute="leading" constant="30" id="1q1-ye-V0D"/>
+                            <constraint firstItem="NLj-vO-2Mi" firstAttribute="top" secondItem="5JE-Qx-gDD" secondAttribute="top" constant="273" id="5qX-dc-kph"/>
+                            <constraint firstItem="NLj-vO-2Mi" firstAttribute="centerX" secondItem="o5h-EW-dY4" secondAttribute="centerX" id="Tkv-wc-VhW"/>
+                            <constraint firstItem="NLj-vO-2Mi" firstAttribute="centerY" secondItem="o5h-EW-dY4" secondAttribute="centerY" id="cln-ew-0p5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ba9-8l-zfp"/>
+                    <connections>
+                        <outlet property="meaningLabel" destination="NLj-vO-2Mi" id="FYD-f6-0iQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v2Y-o9-Wnp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2809.9236641221373" y="1276.7605633802818"/>
         </scene>
         <!--Item-->
         <scene sceneID="VHP-qk-I6l">

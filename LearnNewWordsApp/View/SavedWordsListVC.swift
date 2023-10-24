@@ -12,6 +12,7 @@ class SavedWordsListVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     @IBOutlet weak var savedWordsListTV: UITableView!
     
     var words = [WordModel]()
+    var selectedID = UUID()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +36,15 @@ class SavedWordsListVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         savedWordsListTV.reloadData()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toMeaningVC" {
+            let destinationVC = segue.destination as! MeaningVC
+            destinationVC.takenID = selectedID
+        }
+    }
+    
+    // table view
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return words.count
     }
@@ -45,6 +55,11 @@ class SavedWordsListVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         content.text = words[indexPath.row].inForeignLanguage
         cell.contentConfiguration = content
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedID = words[indexPath.row].id
+        performSegue(withIdentifier: "toMeaningVC", sender: nil)
     }
 
 }

@@ -22,6 +22,7 @@
 		EDA43F1F2AE6C63300AF875F /* AddAWordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA43F1E2AE6C63300AF875F /* AddAWordVC.swift */; };
 		EDA43F212AE6EE5500AF875F /* WordModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA43F202AE6EE5500AF875F /* WordModelView.swift */; };
 		EDA43F252AE856E300AF875F /* SavedWordsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA43F242AE856E300AF875F /* SavedWordsListVC.swift */; };
+		EDC8351E2AE945D40068F646 /* GetAWordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC8351D2AE945D40068F646 /* GetAWordVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		EDA43F1E2AE6C63300AF875F /* AddAWordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAWordVC.swift; sourceTree = "<group>"; };
 		EDA43F202AE6EE5500AF875F /* WordModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModelView.swift; sourceTree = "<group>"; };
 		EDA43F242AE856E300AF875F /* SavedWordsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedWordsListVC.swift; sourceTree = "<group>"; };
+		EDC8351D2AE945D40068F646 /* GetAWordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAWordVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				EDA43EF52AE5EE0D00AF875F /* SceneDelegate.swift */,
 				EDA43EF72AE5EE0D00AF875F /* MainVC.swift */,
 				EDA43F1E2AE6C63300AF875F /* AddAWordVC.swift */,
+				EDC8351D2AE945D40068F646 /* GetAWordVC.swift */,
 				EDA43F242AE856E300AF875F /* SavedWordsListVC.swift */,
 				ED6D379C2AE8741E00BCF20B /* MeaningVC.swift */,
 			);
@@ -208,6 +211,7 @@
 				EDA43EF62AE5EE0D00AF875F /* SceneDelegate.swift in Sources */,
 				EDA43F112AE6937D00AF875F /* CoreDataService.swift in Sources */,
 				EDA43F212AE6EE5500AF875F /* WordModelView.swift in Sources */,
+				EDC8351E2AE945D40068F646 /* GetAWordVC.swift in Sources */,
 				EDA43F0F2AE5F6C600AF875F /* WordModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

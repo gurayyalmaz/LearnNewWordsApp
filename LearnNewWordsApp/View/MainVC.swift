@@ -23,6 +23,7 @@ class MainVC: UIViewController {
     }
     
     @IBAction func getAWordButtonClicked(_ sender: Any) {
+        performSegue(withIdentifier: "toGetAWordVC", sender: nil)
     }
 }
 

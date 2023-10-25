@@ -11,6 +11,7 @@ class WordModelView {
     
     func addData(model: WordModel) {
         CoreDataService().addDataToCoreData(model: model)
+        NotificationCenter.default.post(name: NSNotification.Name("new data added"), object: nil)
     }
     
     func fetchData() -> [WordModel] {

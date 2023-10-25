@@ -24,4 +24,11 @@ class WordModelView {
         return wordModel
     }
     
+    func giveARandomWord() -> WordModel {
+        let words = CoreDataService().fetchDataFromCoreData()
+        let randomNumber = Int(arc4random_uniform(UInt32(words.count - 1)))
+        let word = words[randomNumber]
+        return word
+    }
+    
 }

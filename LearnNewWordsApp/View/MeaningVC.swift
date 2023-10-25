@@ -16,7 +16,7 @@ class MeaningVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var wordModel = WordModelView().fetchItem(id: takenID)
+        let wordModel = WordModelView().fetchItem(id: takenID)
         meaningLabel.text = wordModel.meaning
         
     }
